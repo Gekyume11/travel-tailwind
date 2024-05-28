@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - Tailwind | Dhruv</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="style.css">
+</head>
+<body>
+
+    <main class="main h-dynamic w-full  lg:px-16 lg:py-10 md:px-10 md:py-8 px-[15px] py-5 text-white z-10 relative transition-all ease duration-500 flex flex-col justify-between overflow-hidden">
+
+        <header class="flex justify-between">
+            <a class="uppercase font-bold text-3xl" href="index.html">travel</a>
+            <div class="hamburger relative h-[24px] w-[35px] cursor-pointer transition-all duration-200 ease-in">
+                <span class="top absolute h-[3px] w-full bg-white top-0 left-0 transition-all duration-[400ms] ease-in" ></span>
+                <span class="middle absolute h-[3px] w-full bg-white top-0 left-0 transition-all duration-[400ms] ease-in translate-y-[10px]" ></span>
+                <span class="bottom absolute h-[3px] w-full bg-white top-0 left-0 transition-all duration-[400ms] ease-in translate-y-[20px]" ></span>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h1 class="uppercase font-extrabold">never stop to</h1>
+            <h2 class="uppercase font-bold mb-3">exploring the world</h2>
+            <p class="max-w-[700px] font-normal mb-9">This is a travel website, by Traversy Media, recreated by me, Dhruv, a full-stack developer. I reduced the code and made it responsive with no TailwindCss. You can contact me by clicking the button below</p>
+            <a class="inline-block py-2.5 px-8 bg-white uppercase text-black tracking-[2px] transition-all duration-300 hover:tracking-[6px] font-semibold" href="https://www.instagram.com/dhr.the">contact</a>
+        </section>
+
+        <ul class="flex items-center gap-5">
+            <li><img class="invert scale-50 cursor-pointer transition-transform duration-300 hover:-translate-y-3" src="https://i.ibb.co/x7P24fL/facebook.png"></li>
+            <li><img class="invert scale-50 cursor-pointer transition-transform duration-300 hover:-translate-y-3" src="https://i.ibb.co/Wnxq2Nq/twitter.png"></li>
+            <li><img class="invert scale-50 cursor-pointer transition-transform duration-300 hover:-translate-y-3" src="https://i.ibb.co/ySwtH4B/instagram.png"></li>
+        </ul>
+
+        <video class="absolute size-full inset-0 object-cover z-[-1]" muted loop autoplay>
+            <source src="https://videos.pexels.com/video-files/2169880/2169880-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="absolute size-full inset-0 object-cover z-[-1] bg-[#03a9f4] mix-blend-overlay"></div>
+
+    </main>
+
+    <menu class="absolute w-[220px] h-full top-0 right-0 flex items-center justify-center">
+        <ul class="space-y-5">
+            <li><a class="text-black uppercase text-[24px] transition-colors duration-300 hover:text-slate-500" href="#">home</a></li>
+            <li><a class="text-black uppercase text-[24px] transition-colors duration-300 hover:text-slate-500" href="#">news</a></li>
+            <li><a class="text-black uppercase text-[24px] transition-colors duration-300 hover:text-slate-500" href="#">destination</a></li>
+            <li><a class="text-black uppercase text-[24px] transition-colors duration-300 hover:text-slate-500" href="#">blog</a></li>
+            <li><a class="text-black uppercase text-[24px] transition-colors duration-300 hover:text-slate-500" href="#">contact</a></li>
+        </ul>
+    </menu>
+    
+    <script>
+        const btn = document.querySelector('.hamburger')
+        const main = document.querySelector('.main')
+        
+        btn.onclick = ()=>{
+            btn.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
